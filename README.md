@@ -114,7 +114,7 @@ Now, you can use *batch_scorer* for eRAG.
 - **--retrieval_metrics**: This is a set of retrieval metric names that eRAG uses to aggregate the scores of individual documents in a ranked list for each query. We follow the [*pytrec_eval*](https://github.com/cvangysel/pytrec_eval) format for naming metrics. Note that when the returned values by *downstream_metric* are not binary (zero and one), the only possible metrics are precision ('P') and Hit Ratio ('success'). e.g., 
 
 ```
-retrieval_metrics = {'P_10', 'success', 'recall', 'map'}
+retrieval_metrics = {'P_10', 'success'}
 ```
 
 
